@@ -40,6 +40,7 @@ export default function TodoList() {
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false);
 
   // Fetch todos on component mount
+  // TODO: Use react query to fetch todos
   useEffect(() => {
     const fetchTodos = async () => {
       try {
